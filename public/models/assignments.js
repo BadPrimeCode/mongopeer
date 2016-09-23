@@ -5,10 +5,10 @@ var Assignment = mongoose.model('assignments', assignmentSchema);
 
 
 var assignmentSchema = new Schema({
-  assignment_number:  String,
+  assignment_number:  Number,
   student_name: String,
   score:   Number,
-  date_completed: Date,
+  date_completed: { type: Date, default: Date.now }
 });
 
 module.exports = Assignment;
