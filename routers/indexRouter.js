@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 
-var Assignment = require('/models/Assignment');
+var Assignment = require('../public/models/assignments.js');
 
 router.get('/', function(req,res) {
   // Assignment.find{}, function(err, AssignmentResults) {
@@ -12,7 +12,7 @@ router.get('/', function(req,res) {
     } else {
       res.send(AssignmentResults);
     }
-  });
+  // });
 });
 
 router.post('/create', function (req, res) {
