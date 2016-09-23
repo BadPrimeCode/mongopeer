@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Assignments = mongoose.model('Assignments', assignmentSchema);
+var Assignment = mongoose.model('assignments', assignmentSchema);
 
 
 var assignmentSchema = new Schema({
@@ -10,3 +10,5 @@ var assignmentSchema = new Schema({
   score:   Number,
   date_completed: Date,
 });
+
+module.exports = Assignment;
