@@ -1,4 +1,4 @@
-console.log('app.js sourced');
+console.log('server.js sourced');
 
 var express = require('express');
 var app = express();
