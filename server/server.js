@@ -6,6 +6,10 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
+//require a router
+var indexRouter = require ('../routers/indexRouter');
+app.use('/', indexRouter);
+
 // port decision
 var port = process.env.PORT || 3030;
 app.listen(port, function() {
